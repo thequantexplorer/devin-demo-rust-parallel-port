@@ -1,0 +1,20 @@
+{
+  "name": "tracker-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Acme Tracker: a small JSON API for projects, tasks and comments.",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node scripts/contract.mjs --server node",
+    "contract": "node scripts/contract.mjs --server node",
+    "contract:rust": "node scripts/contract.mjs --server rust",
+    "routes": "node scripts/routes.mjs"
+  },
+  "dependencies": {
+    "express": "^4.22.1"
+  }
+}
